@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node - Socket IO</title>
+    <style>
+        .icon {
+            display: block;
+            margin: auto;
+            width: 36px;
+        }
+
+        body {
+            max-width: 955px;
+            height: 100vh;
+            background-image: linear-gradient(rgb(255, 255, 255), rgb(189, 232, 242))
+        }
+
+        .message {
+            padding: 10px;
+            background-color: #e0fbff;
+            border: 1px solid #00d2c6;
+            margin-top: 5px;
+            border-radius: 5px;
+            color: grey;
+        }
+
+        .container {
+            max-width: 555px;
+            margin: auto;
+            height: 80vh;
+            background-color: #ffd;
+            border: 1px solid #ccc;
+            overflow-y: auto;
+            padding: 10px 20px;
+        }
+
+        .right {
+            float: right;
+            clear: both;
+        }
+
+        .left {
+            float: left;
+            clear: both;
+        }
+
+        .send {
+            clear: both;
+            max-width: 555px;
+            margin: auto;
+            text-align: right;
+        }
+
+        input#messageInp {
+            height: 30px;
+            border-radius: 5px;
+            width: 80%;
+        }
+
+        button.btn {
+            height: 30px;
+            padding: 10px;
+            border-radius: 6px;
+        }
+    </style>
+    <script defer src="./js/jquery.js"></script>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="./js/client.js"></script>
+</head>
+
+<body>
+    <img class="icon" src="./assets/icon.png" />
+    <h1>Welcome Custom Chat</h1>
+    <div class="container">
+    </div>
+    <div class="send">
+        <form action="#" id="chat-container">
+            <input type="text" name="messageInp" id="messageInp" />
+            <button class="btn" type="submit">Send</button>
+            <input type="file" />
+        </form>
+    </div>
+</body>
+
+</html>
